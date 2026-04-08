@@ -1,13 +1,9 @@
-from .image_size_analyzer import ImageSizeAnalyzer
+"""
+ComfyUI Prelife Custom Nodes (V3 API)
+"""
 
-__version__ = "0.1.0"
+from .image_size_analyzer import ImageSizeAnalyzer, comfy_entrypoint
 
-NODE_CLASS_MAPPINGS = {
-    "ImageSizeAnalyzer": ImageSizeAnalyzer,
-}
+__version__ = "0.2.0"
 
-NODE_DISPLAY_NAME_MAPPINGS = {
-    "ImageSizeAnalyzer": "Image Size Analyzer",
-}
-
-__all__ = ["NODE_CLASS_MAPPINGS", "NODE_DISPLAY_NAME_MAPPINGS", "__version__"]
+__all__ = ["ImageSizeAnalyzer", "comfy_entrypoint", "__version__"]
